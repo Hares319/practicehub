@@ -27,3 +27,15 @@ h1{
   color: red;
   text-align: center;
 }
+
+h3{
+  text-align: center;
+  background-color: antiquewhite;
+
+}
+FORM{
+  text-align: center;background-color: aquamarine;
+}
+input{
+  padding: 10px;
+}
