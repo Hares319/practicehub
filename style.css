@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f2f2;
+    background-color: #9768cd;
+}
+
+.header {
+    background-color: #95324b;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    color: #e0e0e0;
+}
+
+.top-nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.top-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.top-menu li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.top-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    align-items: first baseline;
+}
+
+.top-menu a:hover {
+    background-color:fuchsia;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9768cd;
+    min-width: 80px;
+    top: 100%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    color: white;
+}
+
+.dropdown-content li a:hover {
+    background-color: #681945;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: chocolate;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-menu {
+    width: 220px;
+    background-color: #fff;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+    background-color: rgb(51, 181, 225);
+}
+
+.left-menu ul {
+    list-style: none;
+}
+
+.left-menu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.left-menu li a:hover {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color:coral  ;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 5px solid rosybrown;
+}
+
+article {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fafafa;
+    border-left: 4px solid #009688;
+    background-color: lightgreen;
+}
+
+article ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+article ul li {
+    margin-bottom: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-menu {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .top-menu {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .top-menu li {
+        margin: 5px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        background-color: #555;
+        width: 100%;
+    }
+}
